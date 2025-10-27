@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'Young Serif';
+  src: url(../assets/fonts/young-serif/YoungSerif-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Outfit;
+  src: url(../assets/fonts/outfit/static/Outfit-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Outfit;
+  src: url(../assets/fonts/outfit/static/Outfit-Medium.ttf) format('truetype');
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Outfit;
+  src: url(../assets/fonts/outfit/static/Outfit-Bold.ttf) format('truetype');
+  font-weight: 700;
+  font-display: swap;
+}
+
+:root {
+  --Stone-100: hsl(30, 54%, 90%);
+  --Stone-150: hsl(30, 18%, 87%); 
+  --Stone-600: hsl(30, 10%, 34%);
+  --Stone-900: hsl(24, 5%, 18%); 
+
+  
+  --Brown-800: hsl(14, 45%, 36%);
+  
+  --Rose-800: hsl(332, 51%, 32%);
+  --Rose-50: hsl(330, 100%, 98%);
+
+  --White: hsl(0 0% 100%);
+  --Black: hsl(0, 0%, 0%);
+  
+  --text-preset-1: 400 38px/150% 'Young Serif', sans-serif;
+  --text-preset-2: 900 25px/150% 'Young Serif', sans-serif;
+  --text-preset-3: 400 18px/150% 'Outfit', sans-serif;
+  --text-preset-4: 500 16px/150% 'Outfit', sans-serif;
+  --text-preset-5-bold: 800 16px/150% 'Outfit', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 800px;
+  max-width: 1440px;
+  min-width: 375px;
+  margin: 0 auto;
+  font-family: Outfit, sans-serif;
+  overflow: auto;
+  padding: 20px;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font: inherit;
+}

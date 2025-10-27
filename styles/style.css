@@ -1,0 +1,156 @@
+body {
+  background-color: var(--Stone-100);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Young Serif', sans-serif;
+  font-weight: 400;
+  color: var(--Brown-800);
+}
+
+p,
+ul,
+ol,
+li,
+blockquote,
+td,
+caption {
+  color: var(--Stone-600);
+}
+
+.list {
+  padding: 30px; 
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.page {
+  font-family: Outfit, sans-serif;
+  font-size: 16px;
+  width: clamp(375, 80%, 735px);
+  max-width: 735px;
+  min-width: 375px;
+  background-color: var(--White);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.recipe-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.recipe-image {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.main-heading {
+  font: var(--text-preset-1);
+  color: var(--Black)
+}
+
+.preparation-section {
+  background-color: #FFF7FC ;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.preparation-heading {
+  font-family: Outfit, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--Rose-800);
+}
+
+.divider::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid hsl(0, 0%, 88%);
+  
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.bold::after {
+  content: ' ';
+}
+
+.nutrition-table {
+  width: 100%;
+}
+
+
+tr:not(:last-of-type) td {
+  border-bottom: 1px solid hsl(0, 0%, 88%);
+}
+
+td {
+  padding: 15px 0;
+}
+
+caption {
+  text-align: start;
+  margin: 20px 0;
+}
+
+.emphasize-text {
+  color: var(--Brown-800);
+  font-weight: 700;
+}
+
+ol { 
+  counter-reset: item; 
+  
+}
+        
+ol li { 
+  display: block; 
+  position: relative;
+}
+        
+ol li:before {        
+  content: counter(item) ". ";        
+  counter-increment: item;     
+  color: var(--Brown-800);
+  font-weight: 700;
+  position: absolute;
+  left: -20px;
+}
+ 
+.ingredients-list .list-item::marker {
+  color: var(--Brown-800);
+}
+
+.preparation-list .list-item::marker {
+  color: var(--Rose-800);
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
