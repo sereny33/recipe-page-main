@@ -1,10 +1,10 @@
 body {
-  background-color: var(--Stone-100);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
+  background-color: var(--Stone-100);
 }
 
 h1,
@@ -13,9 +13,9 @@ h3,
 h4,
 h5,
 h6 {
+  color: var(--Brown-800);
   font-family: 'Young Serif', sans-serif;
   font-weight: 400;
-  color: var(--Brown-800);
 }
 
 p,
@@ -28,26 +28,26 @@ caption {
   color: var(--Stone-600);
 }
 
-.list {
-  padding: 30px; 
+.list { 
   display: flex;
   flex-direction: column;
   gap: 18px;
+  padding: 30px;
 }
 
 .page {
-  font-family: Outfit, sans-serif;
-  font-size: 16px;
-  width: clamp(375, 80%, 735px);
-  max-width: 735px;
-  min-width: 375px;
-  background-color: var(--White);
-  padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  min-width: 375px;
+  max-width: 735px;
   border-radius: 15px;
+  padding: 40px;
+  font-family: Outfit, sans-serif;
+  font-size: 16px;
+  background-color: var(--White);
 }
 
 .recipe-card {
@@ -62,21 +62,21 @@ caption {
 }
 
 .main-heading {
+  color: var(--Black);
   font: var(--text-preset-1);
-  color: var(--Black)
 }
 
 .preparation-section {
-  background-color: #FFF7FC ;
-  padding: 20px;
   border-radius: 15px;
+  padding: 20px;
+  background-color: #FFF7FC ;
 }
 
 .preparation-heading {
-  font-family: Outfit, sans-serif;
-  font-size: 18px;
-  font-weight: 600;
   color: var(--Rose-800);
+  font-family: Outfit, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .divider::after {
@@ -110,8 +110,8 @@ td {
 }
 
 caption {
-  text-align: start;
   margin: 20px 0;
+  text-align: start;
 }
 
 .emphasize-text {
@@ -125,17 +125,17 @@ ol {
 }
         
 ol li { 
-  display: block; 
-  position: relative;
+  position: relative; 
+  display: block;
 }
         
 ol li:before {        
-  content: counter(item) ". ";        
-  counter-increment: item;     
-  color: var(--Brown-800);
-  font-weight: 700;
+  content: counter(item) ". ";
   position: absolute;
-  left: -20px;
+  left: -20px;     
+  color: var(--Brown-800);
+  font-weight: 700;        
+  counter-increment: item;
 }
  
 .ingredients-list .list-item::marker {
@@ -153,4 +153,21 @@ ol li:before {
 
 .attribution a { 
   color: hsl(228, 45%, 44%); 
+}
+
+
+@media screen and (max-width: 480px) {
+  /* Styles for smaller mobile devices */
+  .recipe-image {
+    width: calc(100% + 80px);
+    margin-top: -40px;
+    margin-right: -40px;
+    margin-left: -40px;
+    border-radius: 15px;
+  }
+
+  .page {
+    padding: 10px;
+    overflow: hidden;
+  }
 }
